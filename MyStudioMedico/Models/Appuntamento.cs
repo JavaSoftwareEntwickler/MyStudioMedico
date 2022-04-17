@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MyStudioMedico.Models
 {
@@ -21,7 +22,7 @@ namespace MyStudioMedico.Models
         public Dottore Dottore { get; set; }
 
     }
-
+    [Authorize]
     [Table("Dottori")]
     public class Dottore
     {

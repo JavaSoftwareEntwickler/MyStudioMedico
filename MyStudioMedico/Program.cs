@@ -14,6 +14,20 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 
+//builder.Services.AddRazorPages(options =>
+//{
+
+//    options.Conventions.AuthorizeFolder("/Appuntamenti");
+
+//    /*
+//   options.Conventions.AuthorizePage("/Contact");
+//   options.Conventions.AuthorizeFolder("/Private");
+//   options.Conventions.AllowAnonymousToPage("/Private/PublicPage");
+//   options.Conventions.AllowAnonymousToFolder("/Private/PublicPages");
+//   */
+
+//});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
